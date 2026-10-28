@@ -1,0 +1,16 @@
+airbnb:
+  outputs:
+    dev:
+      type: snowflake
+      account: owxqdww-kt85688
+      user: dbt
+
+      role: TRANSFORM
+      private_key: "-----BEGIN ENCRYPTED PRIVATE KEY-----\nMIIFNTBfBgkqhkiG9w0BBQ0wUjAxBgkqhkiG9w0BBQwwJAQQWBftKgM8r8IgAuB8\nkTMIgQICCAAwDAYIKoZIhvcNAgkFADAdBglghkgBZQMEASoEEI7ioGn2ZuqzPkCG\nPvB5/SsEggTQ7a85ACXFUDi+u6nRuoWgF0eTufEbOoVY6h8RnMuaggRNJ9IRom2a\nK154UDMJ5y6hqaDE5gPjUGXT8c7wpMjPoaSW9rcRJVn3cCLhMeZ4Derb1Ak6AJan\n8qGBGabCWFjaqntzITxOD/LIja5I4exaVM1ag+WhDaL5UDv+vFHr4R69pBFOZSSj\ny8iIt9045db+VB77R1xTawrmC2KCaApLaWNUbVmFPz/SkkEejKwTvCacHziVMK/i\n3BD95CFXliIEwklziC8tRCIIklyVp2d0HzHmdJa6I/vHopEMWbvILsudGOjx+/3G\nqk2SVCoKe8hdrbIdGJECaeTuYCYyKgIhpd8s+B5Pr1zZZyrY4TMbZX2Wrw64Bjbw\nsxS1o1dxHFt58NBRpGdaqqUeUxkwIm2a+HYHwXeNlBV2MBxM4hIIA3zmbeLWBnRA\nOLJLDFe/EFq2PVOV2BYadVXI67ADtLqFgvvyngBTdxQF8m9bO/390zf1RVLLPHnu\nt7XTHuUI78JptI8CAycxdf6ExbWG0Aub6zzI31h3sekdVXfQZVKwPyVVMqCOAg3S\nrrHwlaqKhMrKmsV9H9raMUbXMGhd77yz/mV34/kWDvb4SvP2+TRvfP/vIKx7oxhy\nZ99bnaeq4CHnTOzOqVwl+OWJRwM7g+ZVm2yaKPIAij4uqQMDuUMm4V8y2Td6mnEs\nYVgcFIuc2gBJTYVFARvn8uwRYhwfWpG9leDezpqNKpQUvxJQkldk6gR61948pcX5\nEuO9RyWFVc60ntBrlXR0QCfKjc4t3Yyzia4TSSqsFIEllw/vT2Uh3fX7DHmQ5vSY\nQ3Mp82MvAb9pD3gK1YDGaxGAonDYyC+zres5RcQig2HdusR/znx9odmhypsTb6fv\nBX+ZdbL6+4/iuF6tylsyZWm5ddHGXP+Vh4KLb/zQxMxT8PcnJ7gtKyvYVDyDb3ix\nxnLL+VMYVHfyJmlnhmqior25OAmc3NlfqfcGZP6yO9yaa1/zXlHRK643gEiGQv4V\nYtNKUKMg+pZBR9UvS2i1tWuDHqM94dMwxGDEbbxPy6wh8G4lAz6206MKPYit7U2i\nzDSrer7rUy5Jrmnt8STDJAoha2D20eHnzSuOSZRhd/UVG7y+mPKYgXqgVfmQSEad\niGuo0FvYny3sHr0KbJEC0TMSZVd9BjiMNWIBowB3f5L/Xm9KnekdDx7QgU9Wxn7l\n0nZWVDJravLRJhlKH5BWjFmcBRnKzGB2IzragfWisIHbNC/uu2bSB+l+k1o5nimE\nikepe4IFZRJjnO/aNWdSTdpzXdVA4Nr4QQx/ZiTNvKZVSaTg66fHeMFXZ8U2tMBa\n2XjUaRdET2DoAsD4ZE84H37ZBGXRLomqvd8HQMY2nlAy2xN55IXiynQ7ybnPWEJe\ndlU5nxmN5JR5MIuaIUcNs6KyioTGjsJFRX4SWLh1nL4OCncz+ga6cVjgPQgv1xfv\nVvt6oNjO9lq/qbRt/cUMTrt+j3CLkiKzUs4aicu/l74ElmXgZwmwvkcyEj4wOmNF\n6OJKVkkvEFqqUzjk9+nnJPxpL1SZsYSW452pEjfRtwvVM9RoVEuz3QWrVZ7flEyI\nvMGnuQ+CAXmphVuW9edlItZKBu89FcVWePbhXXsa35wjKSoeueR0myM=\n-----END ENCRYPTED PRIVATE KEY-----\n"
+      private_key_passphrase: q
+
+      database: AIRBNB
+      schema: DEV
+      threads: 1
+      warehouse: COMPUTE_WH
+  target: dev
