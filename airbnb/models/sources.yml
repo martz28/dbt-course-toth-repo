@@ -1,0 +1,17 @@
+sources:
+  - name: airbnb  # database
+    schema: raw   # schema in db
+    tables:
+      - name: listings            # alias for table that you use in dbt
+        identifier: raw_listings  # actual table name in db
+
+      - name: hosts
+        identifier: raw_hosts
+
+      - name: reviews
+        identifier: raw_reviews
+        config:
+          loaded_at_field: date
+          freshness:
+            warn_after: {count: 1, period: hour}
+            error_after: {count: 24, period: hour}

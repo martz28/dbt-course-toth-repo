@@ -1,3 +1,10 @@
+-- override the dbt_project materialization for this model
+{{ 
+  config(
+    materialized='view'
+    ) 
+}}
+
 WITH src_listings AS (
   SELECT
     *

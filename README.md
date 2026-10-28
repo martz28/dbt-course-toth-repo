@@ -46,3 +46,8 @@ by defalut all models are views
 
 to run models
 dbt run
+
+
+seeds are local files from your computer
+sources are tables in your database from ADF for example
+

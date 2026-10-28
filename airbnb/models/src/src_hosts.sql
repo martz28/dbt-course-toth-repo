@@ -5,6 +5,6 @@ WITH cte_hosts AS (
     	IS_SUPERHOST,
     	CREATED_AT,
     	UPDATED_AT
-FROM airbnb.raw.raw_hosts
+FROM {{ source('airbnb', 'hosts') }}
 )
 SELECT * FROM cte_hosts
