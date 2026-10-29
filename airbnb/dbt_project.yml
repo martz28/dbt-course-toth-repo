@@ -37,4 +37,6 @@ models:
     src: 
       +materialized: ephemeral # this is like a cte
       
-
+data_tests:
+  +store_failures: true
+  +schema: _test_failures
