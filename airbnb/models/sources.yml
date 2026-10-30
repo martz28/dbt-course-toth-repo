@@ -4,6 +4,15 @@ sources:
     tables:
       - name: listings            # alias for table that you use in dbt
         identifier: raw_listings  # actual table name in db
+        columns:
+          - name: price
+            data_tests:
+              # use great expections to check for ridiculous price $
+              - dbt_expectations.expect_column_values_to_be_between:
+                # convert the string to number if needed
+                min_value: 3
+                max_value: 10000
+
 
       - name: hosts
         identifier: raw_hosts

@@ -77,6 +77,12 @@ models:
       - name: created_at
         data_type: timestamp
 
+  - name: dim_listings_w_hosts
+    description: Listings joined with hosts.
+    data_tests:
+      - dbt_expectations.expect_table_row_count_to_equal_other_table:
+          compare_model: source('airbnb', 'listings')
+
   - name: fact_reviews
     columns:
         - name: listing_id
