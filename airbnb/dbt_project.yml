@@ -49,6 +49,8 @@ models:
       +materialized: table # gets overridden by model config
     src: 
       +materialized: ephemeral # this is like a cte
+    fct:
+      +tags: ["fact"]
       
 data_tests:
   +store_failures: true
