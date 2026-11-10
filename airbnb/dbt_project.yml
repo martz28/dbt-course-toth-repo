@@ -56,3 +56,5 @@ data_tests:
   +store_failures: true
   +schema: _test_failures
 
+vars:
+  username: default_user
